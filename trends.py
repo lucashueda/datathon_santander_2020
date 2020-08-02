@@ -25,9 +25,9 @@ pytrend = TrendReq(hl='BR', tz = 360)
 results = pd.DataFrame()
 scores = []
 
-me = args['me']
+me = args.me
 
-for k in args['kw']:
+for k in args.kw:
   pytrend.build_payload(
       kw_list=[k],
       cat=0,
@@ -39,5 +39,5 @@ for k in args['kw']:
 
   results[k] = data[k]
 
-ordered = pd.DataFrame({'produto': args['kw'], 'score':scores})
+ordered = pd.DataFrame({'produto': args.kw, 'score':scores})
 ordered.to_csv("local_ordered.csv", index = False)
