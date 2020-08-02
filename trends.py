@@ -25,6 +25,8 @@ pytrend = TrendReq(hl='BR', tz = 360)
 results = pd.DataFrame()
 scores = []
 
+print(args.kw, args.me)
+
 me = args.me
 
 for k in args.kw:
