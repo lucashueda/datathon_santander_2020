@@ -14,7 +14,7 @@ parser = argparse.ArgumentParser(description='Argparser for data preprocessing')
 
 parser.add_argument('--kw', default = [], type = list, metavar = 'KW', 
                     help = 'Lista das keywords a serem analisadas na trend')
-parser.add_argument('--me', default = 3, type = int, metavar = 'M', 
+parser.add_argument('--me', default = '3', type = str, metavar = 'M', 
                     help = 'Meses de análise das trends')
 
 args = parser.parse_args()
