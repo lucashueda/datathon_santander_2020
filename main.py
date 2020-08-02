@@ -39,7 +39,7 @@ def get_image(path):
 # Lendo o modelo
 
 # Testando dando load no modelo
-json_file = open('model_weights/model.json', 'r')
+json_file = open('model_weigths/model.json', 'r')
 loaded_model_json = json_file.read()
 json_file.close()
 loaded_model = model_from_json(loaded_model_json)
