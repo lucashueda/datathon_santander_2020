@@ -39,12 +39,12 @@ def get_image(path):
 # Lendo o modelo
 
 # Testando dando load no modelo
-json_file = open('model_weigths/model.json', 'r')
+json_file = open('model_weights/model.json', 'r')
 loaded_model_json = json_file.read()
 json_file.close()
 loaded_model = model_from_json(loaded_model_json)
 # load weights into new model
-loaded_model.load_weights("model_weigths/model.h5")
+loaded_model.load_weights("model_weights/model.h5")
 
 # Prevendo o label para cada imagem no diretório "test_images"
 import os 
