@@ -26,7 +26,6 @@ import itertools
 import matplotlib.pyplot as plt
 import time
 import pandas as pd
-%matplotlib inline
 from keras.preprocessing import image
 from keras.applications.imagenet_utils import preprocess_input
 
